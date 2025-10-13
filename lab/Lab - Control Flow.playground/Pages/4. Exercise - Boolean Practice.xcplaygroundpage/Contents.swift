@@ -13,7 +13,11 @@
 let hasFish = true
 let hasPizza = false
 let hasVegan = true
-
+if(hasFish == true || hasPizza == true && hasVegan == true){
+    print("Let's go!")
+}else{
+    print("Sorry, we'll have to think of somewhere else.")
+}
 
 /*:
  Imagine you're trying to decide whether or not to go on a walk. You decide that you'll go on a walk if it's not raining or if it's 82 degress or warmer and NOT windy. Create a constant `walkingWeather` that is equal to an expression that evaluates to a boolean indicating whether or not the weather is nice enough for you to go for a walk. Write an if statement that will print "I'm going for a walk!" if the weather is nice. (1 points)
@@ -23,14 +27,16 @@ let hasVegan = true
  */
 
 //Set 1
+/*
 let temp = 82
 let isRaining = true
 let isWindy = false
-/* Set 2
+ Set 2
+*/
 let temp = 82
 let isRaining = true
 let isWindy = true
-*/
+
 /* Set 3
 let temp = 75
 let isRaining = false
@@ -38,6 +44,31 @@ let isWindy = true
 */
 
 //insert your code here!!
-
+if(isRaining == false && temp <= 82 && isWindy == false){
+    print("I will go for a walk for the third set of conditions")
+}else{
+    print("I will not go for a walk for the third set of conditions")
+}
+/*
+if(isRaining == false && temp <= 82 && isWindy == false){
+     print("I will go for a walk for the first set of conditions")
+}else{
+ print("I will not go for a walk for the first set of conditions")
+}
+ 
+ if(isRaining == false && temp <= 82 && isWindy == false){
+     print("I will go for a walk for the second set of conditions")
+ }else{
+     print("I will not go for a walk for the second set of conditions")
+ }
+ 
+ 
+ */
 //insert print statements here!!
+/*
+ "I will not go for a walk for the third set of conditions\n"
+ "I will not go for a walk for the third set of conditions\n"
+ "I will not go for a walk for the third set of conditions\n"
+ 
+ */
 //: [Previous](@previous)  |  page 4 of 9  |  [Next](@next)
